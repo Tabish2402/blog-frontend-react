@@ -15,7 +15,7 @@ export default function Login() {
             formData.append("password", password);
 
             const res = await axios.post(
-                "http://localhost:8000/login",
+                "https://fastapi-blog-backend-production.up.railway.app/login",
                 formData
             );
 
