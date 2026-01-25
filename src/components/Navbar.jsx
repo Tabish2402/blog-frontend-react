@@ -16,7 +16,7 @@ export default function Navbar() {
             <div className="text-lg flex gap-15 items-center font-semibold text-gray-300 font-serif ">
                 <Link to="/create">Create</Link>
                 <button onClick={logout} className=" text-lg text-red-400"  >
-                    SignIn/SignOut
+                    SignOut
                 </button>
             </div>
         </div>
