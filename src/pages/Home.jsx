@@ -27,7 +27,7 @@ export default function Home() {
         <div className="p-6">
 
             <div className="max-w-4xl mx-auto p-6">
-                <h1 className="text-4xl font-bold mb-6 text-center">TwoCents — Everyone has something worth sharing.</h1>
+                <h1 className="text-4xl font-bold mb-6 text-center">TWOCENTLY — Everyone has something worth sharing.</h1>
 
 
             {error && <p className="text-red-500">{error}</p>}
