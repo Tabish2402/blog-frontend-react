@@ -9,7 +9,7 @@ export default function Navbar() {
     };
 
     return (
-        <div className="bg-black text-white px-8 py-10 flex justify-between">
+        <div className="bg-black text-white px-8 py-10 gap-3 flex justify-between">
             <Link to="/" className=" text-xxl font-bold text-lg font-serif">
                 TwoCently
             </Link>
