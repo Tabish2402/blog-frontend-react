@@ -11,12 +11,12 @@ export default function Navbar() {
     return (
         <div className="bg-black text-white px-8 py-10 flex justify-between">
             <Link to="/" className=" text-xxl font-bold text-lg font-serif">
-                MyBlog
+                TwoCently
             </Link>
             <div className="text-lg flex gap-15 items-center font-semibold text-gray-300 font-serif ">
                 <Link to="/create">Create</Link>
                 <button onClick={logout} className=" text-lg text-red-400"  >
-                    Logout
+                    SignIn/SignOut
                 </button>
             </div>
         </div>

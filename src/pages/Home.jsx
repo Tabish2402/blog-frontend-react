@@ -1,12 +1,16 @@
 
-console.log("HOME COMPONENT LOADED");
+
 
 import { useEffect, useState } from "react";
 import api from "../api/axios";
+import { useNavigate } from "react-router-dom";
+
 
 export default function Home() {
+    console.log("HOME COMPONENT LOADED");
     const [blogs, setBlogs] = useState([]);
     const [error, setError] = useState("");
+    const navigate = useNavigate();
 
     useEffect(() => {
         api.get("/")
@@ -23,13 +27,13 @@ export default function Home() {
         <div className="p-6">
 
             <div className="max-w-4xl mx-auto p-6">
-                <h1 className="text-4xl font-bold mb-6 text-center">All Blogs</h1>
+                <h1 className="text-4xl font-bold mb-6 text-center">All THE TwoCents</h1>
 
 
             {error && <p className="text-red-500">{error}</p>}
                 {blogs.length === 0 && !error && (
                     <p className="text-center text-gray-500 mt-10">
-                        No blogs yet. Create your first one!
+                        No Thoughts yet. Create your first one!
                     </p>
                 )}
 
@@ -64,9 +68,8 @@ export default function Home() {
                                 </button>
 
                                 <button
-                                    onClick={() => {
-                                        window.location.href = `/edit/${b.id}`;
-                                    }}
+                                    onClick={() => navigate(`/edit/${b.id}`)}
+
                                     className="text-lg px-3 py-1 rounded bg-blue-100 text-blue-600 hover:bg-blue-200 transition"
 
                                 >

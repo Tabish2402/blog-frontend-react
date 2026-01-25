@@ -5,6 +5,7 @@ import CreateBlog from "./pages/CreateBlog";
 import Navbar from "./components/Navbar";
 import ProtectedRoute from "./components/Protected.Route";
 import EditBlog from "./pages/EditBlog";
+import Signup from "./pages/Signup";
 
 function App() {
   return (
@@ -13,8 +14,10 @@ function App() {
     <Navbar />
         <div className="flex-1 overflow-y-auto">
       <Routes>
-        <Route path="/create" element={<CreateBlog />} />
+       
+
         <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
         <Route path="/" element={
           <ProtectedRoute><Home /></ProtectedRoute>
         } />
